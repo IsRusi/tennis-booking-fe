@@ -1,0 +1,11 @@
+{
+  "title": {
+    "name": "Court"
+  },
+  "booking": {
+    "book": "Book"
+  },
+  "main": {
+    "center-text": "What we do"
+  }
+}
