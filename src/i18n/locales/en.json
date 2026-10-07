@@ -1,11 +1,12 @@
 {
-  "title": {
-    "name": "Court"
+  "header": {
+    "menuLabel": "Open menu",
+    "brandName": "CourtSide",
+    "bookButton": "Book"
   },
-  "booking": {
-    "book": "Book"
-  },
-  "main": {
-    "center-text": "What we do"
+  "hero": {
+    "goal": "What we do",
+    "title": "Elevate Your Game",
+    "tagline": "Premium court reservations for passionate players. Play when you want, where you want."
   }
 }

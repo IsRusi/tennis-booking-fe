@@ -5,9 +5,3 @@ import HeaderPart from '../components/HeaderPart.vue';
 <template>
     <HeaderPart />
 </template>
-
-<style scoped>
-.body {
-    background-color: var(--color-primary);
-}
-</style>
