@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-
+import CoffeeIcon from '../components/icons/CoffeeIcon.vue'
+import ShowerIcon from '../components/icons/ShowerIcon.vue'
+import RocketIcon from '../components/icons/RocketIcon.vue'
 
 import SurfaceIcon from '../components/icons/SurfaceIcon.vue'
 import CourtIcon from '../components/icons/CourtIcon.vue'
@@ -12,7 +14,8 @@ import HeaderPart from '../components/HeaderPart.vue'
 import HeroSection from '../components/HeroSection.vue'
 import SurfaceCard from '../components/SurfaceCard.vue'
 import CourtCard from '../components/CourtCard.vue'
-
+import AmenityCard from '../components/AmenityCard.vue'
+import AppFooter from '../components/AppFooter.vue'
 
 const { t } = useI18n()
 
@@ -87,6 +90,24 @@ const courts = computed(() => [
     }
 ])
 
+const amenities = computed(() => [
+    {
+        title: t('amenities.items.proShop.title'),
+        description: t('amenities.items.proShop.description'),
+        icon: 'rocket'
+    },
+    {
+        title: t('amenities.items.cafe.title'),
+        description: t('amenities.items.cafe.description'),
+        icon: 'coffee'
+    },
+    {
+        title: t('amenities.items.lockerRooms.title'),
+        description: t('amenities.items.lockerRooms.description'),
+        icon: 'shower'
+    }
+])
+
 
 
 </script>
@@ -132,10 +153,24 @@ const courts = computed(() => [
                 </div>
             </section>
 
-            
+            <section class="section">
+                <h2 class="section__title">
+                    {{ t('amenities.title') }}
+                </h2>
+
+                <div class="amenities">
+                    <AmenityCard v-for="item in amenities" :key="item.title" v-bind="item">
+                        <template #icon>
+                            <CoffeeIcon v-if="item.icon === 'coffee'" />
+                            <ShowerIcon v-else-if="item.icon === 'shower'" />
+                            <RocketIcon v-else-if="item.icon === 'rocket'" />
+                        </template>
+                    </AmenityCard>
+                </div>
+            </section>
         </main>
 
-       
+        
     </div>
 </template>
 
