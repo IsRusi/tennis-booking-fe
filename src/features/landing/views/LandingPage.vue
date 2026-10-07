@@ -11,6 +11,7 @@ import LeafIcon from '../components/icons/LeafIcon.vue'
 import HeaderPart from '../components/HeaderPart.vue'
 import HeroSection from '../components/HeroSection.vue'
 import SurfaceCard from '../components/SurfaceCard.vue'
+import CourtCard from '../components/CourtCard.vue'
 
 
 const { t } = useI18n()
@@ -54,6 +55,39 @@ const surfaceFeatures = computed(() => [
     }
 ])
 
+const courts = computed(() => [
+    {
+        name: t('courts.items.riverside.name'),
+        address: t('courts.items.riverside.address'),
+        rating: '4.9',
+        statusLabel: t('courts.items.riverside.status'),
+        statusVariant: 'open' as const
+    },
+    {
+        name: t('courts.items.downtown.name'),
+        address: t('courts.items.downtown.address'),
+        rating: '4.8',
+        statusLabel: t('courts.items.downtown.status'),
+        statusVariant: 'closed' as const
+    },
+    {
+        name: t('courts.items.heritage.name'),
+        address: t('courts.items.heritage.address'),
+        rating: '',
+        statusLabel: t('courts.items.heritage.status'),
+        statusVariant: 'premium' as const,
+        ctaDisabled: true
+    },
+    {
+        name: t('courts.items.skyline.name'),
+        address: t('courts.items.skyline.address'),
+        rating: '4.7',
+        statusLabel: t('courts.items.skyline.status'),
+        statusVariant: 'open' as const
+    }
+])
+
+
 
 </script>
 
@@ -81,9 +115,27 @@ const surfaceFeatures = computed(() => [
                 </div>
             </section>
 
+            <section class="section">
+                <div class="section__header">
+                    <h2 class="section__title section__title--left">
+                        {{ t('courts.title') }}
+                    </h2>
+
+                    <a class="section__see-all" href="#">
+                        {{ t('courts.seeAll') }}
+                    </a>
+                </div>
+
+                <div class="gallery">
+                    <CourtCard v-for="court in courts" :key="court.name" image-url="/images/court-placeholder.jpg"
+                        v-bind="court" />
+                </div>
+            </section>
+
+            
         </main>
 
-
+       
     </div>
 </template>
 
