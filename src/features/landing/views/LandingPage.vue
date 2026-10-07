@@ -108,7 +108,20 @@ const amenities = computed(() => [
     }
 ])
 
-
+const footerLinks = computed(() => [
+    {
+        label: t('footer.contact'),
+        href: '/contact'
+    },
+    {
+        label: t('footer.privacy'),
+        href: '/privacy'
+    },
+    {
+        label: t('footer.terms'),
+        href: '/terms'
+    }
+])
 
 </script>
 
@@ -170,7 +183,7 @@ const amenities = computed(() => [
             </section>
         </main>
 
-        
+        <AppFooter :links="footerLinks" />
     </div>
 </template>
 
