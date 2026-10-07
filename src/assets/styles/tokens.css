@@ -1,0 +1,53 @@
+:root {
+  --color-primary: #006670;
+  --color-primary-muted: #3a6661;
+  --color-primary-soft: #406c67;
+  --color-mint-pill: #bdece5;
+  --color-mint-card: #c5dcd5;
+  --color-mint-bg: #eef5f7;
+  --color-background: #e8e2d9;
+  --color-surface: #ffffff;
+  --color-neutral-pill: #dde4e6;
+  --color-text: #161d1f;
+  --color-text-muted: #3d494b;
+  --color-icon-muted: #6d797b;
+  --color-text-on-dark: #ffffff;
+  --color-rating-star: #eab308;
+  --color-badge-neutral: #78746d;
+  --gradient-premium: linear-gradient(90deg, #fbbf24 0%, #d97706 100%);
+  --overlay-image-bottom: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  --overlay-header-bg: rgba(0, 102, 112, 0.9);
+  --font-heading: 'Lexend', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 26px;
+  --line-height-tight: 1.2;
+  --line-height-base: 1.5;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+  --shadow-card: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-hero: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-header: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --page-max-width: 1280px;
+  --header-height: 64px;
+}

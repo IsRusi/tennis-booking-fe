@@ -1,0 +1,97 @@
+{
+  "header": {
+    "menuLabel": "Open menu",
+    "brandName": "CourtSide",
+    "bookButton": "Book"
+  },
+  "hero": {
+    "goal": "What we do",
+    "title": "Elevate Your Game",
+    "tagline": "Premium court reservations for passionate players. Play when you want, where you want."
+  },
+  "surface": {
+    "title": "About court",
+    "features": {
+      "surface": {
+        "title": "We have three types of surface",
+        "description": "Consistent bounce, fast pace & all-weather.",
+        "tags": {
+          "clay": "Clay",
+          "hard": "Hard"
+        }
+      },
+      "size": {
+        "title": "Our court size and marking",
+        "description": "ITF standard regulation dimensions & lines.",
+        "tags": {
+          "regulation": "Regulation",
+          "itf": "ITF Standard"
+        }
+      },
+      "schedule": {
+        "title": "Courts location open and close",
+        "description": "Daily access 06:00 – 22:00 with floodlights.",
+        "tags": {
+          "hours": "06:00–22:00",
+          "floodlit": "Floodlit"
+        }
+      },
+      "location": {
+        "title": "Comfy location near to forest with clear air",
+        "description": "Peaceful scenic surroundings & pure pine air.",
+        "tags": {
+          "scenic": "Scenic",
+          "freshAir": "Fresh Air"
+        }
+      }
+    }
+  },
+  "courts": {
+    "title": "We already have 4 courts",
+    "seeAll": "See all",
+    "items": {
+      "riverside": {
+        "name": "Riverside Club #1",
+        "address": "Riverside, Court 1",
+        "status": "Hard"
+      },
+      "downtown": {
+        "name": "Downtown Arena A",
+        "address": "Downtown, Arena A",
+        "status": "Closed today"
+      },
+      "heritage": {
+        "name": "Heritage Lawn",
+        "address": "Heritage Park",
+        "status": "Premium"
+      },
+      "skyline": {
+        "name": "Skyline Padel",
+        "address": "Skyline Complex",
+        "status": "Hard"
+      }
+    }
+  },
+  "amenities": {
+    "title": "Additional Information",
+    "items": {
+      "proShop": {
+        "title": "Pro Shop",
+        "description": "Equip yourself with top-tier gear. We offer racquet stringing, grips, apparel, and expert advice to elevate your game."
+      },
+      "cafe": {
+        "title": "Courtside Cafe",
+        "description": "Relax post-match with refreshing smoothies, healthy snacks, and premium coffee blends in our comfortable lounge."
+      },
+      "lockerRooms": {
+        "title": "Locker Rooms",
+        "description": "Enjoy our luxury locker facilities featuring spacious changing areas, premium showers, and complimentary towel service."
+      }
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms"
+  }
+}
