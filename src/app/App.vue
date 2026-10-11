@@ -4,7 +4,7 @@ import LandingPage from '@/features/landing/views/LandingPage.vue';
 </script>
 
 <template>
-  <LandingPage/>
+  <LandingPage />
 </template>
 
 <style scoped></style>
