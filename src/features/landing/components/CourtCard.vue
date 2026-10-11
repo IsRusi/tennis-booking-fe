@@ -2,7 +2,6 @@
 withDefaults(defineProps<{
   imageUrl: string
   name: string
-  rating: string
   address: string
   statusLabel: string
   statusVariant?: 'open' | 'closed' | 'premium'
@@ -21,11 +20,6 @@ defineEmits<{ book: [] }>()
   <article class="court-card">
     <div class="court-card__media">
       <img class="court-card__image" :src="imageUrl" :alt="name" />
-
-      <div class="court-card__rating">
-        <span class="court-card__star" />
-        <span>{{ rating }}</span>
-      </div>
 
       <span class="court-card__status" :class="`court-card__status--${statusVariant}`">
         {{ statusVariant === 'open' ? 'Open' : statusVariant === 'premium' ? 'Premium' : 'Closed' }}
@@ -65,6 +59,10 @@ defineEmits<{ book: [] }>()
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
   overflow: hidden;
+  transition: 1s;
+}
+.court-card:hover {
+scale: 1.02;
 }
 
 .court-card__media {
@@ -78,30 +76,6 @@ defineEmits<{ book: [] }>()
   object-fit: cover;
 }
 
-.court-card__rating {
-  position: absolute;
-  top: var(--space-4);
-  right: var(--space-4);
-  display: flex;
-  align-items: center;
-  gap: var(--space-1);
-  padding: var(--space-1) var(--space-3);
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(2px);
-  border-radius: var(--radius-pill);
-  box-shadow: var(--shadow-card);
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: var(--font-size-sm);
-  color: var(--color-text);
-}
-
-.court-card__star {
-  width: 12px;
-  height: 12px;
-  background: var(--color-rating-star);
-  border-radius: 2px; /* swap for an actual star icon/svg */
-}
 
 .court-card__status {
   position: absolute;
@@ -173,6 +147,12 @@ defineEmits<{ book: [] }>()
   font-size: var(--font-size-base);
   border-radius: var(--radius-pill);
   text-align: center;
+  transition: 0.2s;
+}
+.court-card__cta:active {
+  scale: 1.02;
+  background-color: var(--color-primary);
+  color:var(--color-text-on-dark);
 }
 
 .court-card__cta--disabled {

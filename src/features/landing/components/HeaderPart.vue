@@ -75,10 +75,20 @@ defineEmits<{ book: [] }>()
   font-weight: 600;
   box-shadow: var(--shadow-card);
   transition: color 0.15s ease;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-delay: 10s;
+  animation-iteration-count:infinite;
 }
 
 .header-container__button:active {
   color: var(--color-primary-muted);
+}
+
+@keyframes bounce{
+0% {scale: 1.01;}
+50%{scale: 1.08;}
+100%{scale: 1.01;}
 }
 
 @media screen and (min-width: 500px) {
